@@ -137,11 +137,11 @@ int main()
 		AND 	CX, BX
 		SHR 	CX, 12
 		CMP 	CX, 0
-		JE 		installed
+		JE 		notinstalled
 		CALL 	printGameYes
 		JMP 	end
 
-	installed:
+	notinstalled:
 		CALL 	printGameNo
 
 	end:
